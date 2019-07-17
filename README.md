@@ -6,9 +6,9 @@ spring reference 번역
 * 오리지널
   * https://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/2.1.2.RELEASE/multi/multi_spring-cloud-netflix.html
 * 백업
-  * https://htmlpreview.github.io/?https://github.com/Meteorkor/Spring-Reference-ko/blob/master/spring-cloud-netflix/2.1.2.RELEASE/spring-cloud-netflix.html
+  * https://github.com/Meteorkor/Spring-Reference-ko/blob/master/spring-cloud-netflix/2.1.2.RELEASE/spring-cloud-netflix.md
 * 번역
-  * https://htmlpreview.github.io/?https://github.com/Meteorkor/Spring-Reference-ko/blob/master/spring-cloud-netflix/2.1.2.RELEASE/spring-cloud-netflix-ko.html
+  * https://github.com/Meteorkor/Spring-Reference-ko/blob/master/spring-cloud-netflix/2.1.2.RELEASE/spring-cloud-netflix-ko.md
 
 
 

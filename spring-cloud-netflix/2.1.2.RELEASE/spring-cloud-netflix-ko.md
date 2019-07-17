@@ -4,39 +4,39 @@
 
 [](#d0e9)
 
-[1. Service Discovery: Eureka Clients](#_service_discovery_eureka_clients)
+* [1. Service Discovery: Eureka Clients](#_service_discovery_eureka_clients)
 
-[1.1. How to Include Eureka Client](#netflix-eureka-client-starter)
+  * [1.1. How to Include Eureka Client](#netflix-eureka-client-starter)
 
-[1.2. Registering with Eureka](#_registering_with_eureka)
+  * [1.2. Registering with Eureka](#_registering_with_eureka)
 
-[1.3. Authenticating with the Eureka Server](#_authenticating_with_the_eureka_server)
+  * [1.3. Authenticating with the Eureka Server](#_authenticating_with_the_eureka_server)
 
-[1.4. Status Page and Health Indicator](#_status_page_and_health_indicator)
+  * [1.4. Status Page and Health Indicator](#_status_page_and_health_indicator)
 
-[1.5. Registering a Secure Application](#_registering_a_secure_application)
+  * [1.5. Registering a Secure Application](#_registering_a_secure_application)
 
-[1.6. Eureka’s Health Checks](#_eurekas_health_checks)
+  * [1.6. Eureka’s Health Checks](#_eurekas_health_checks)
 
-[1.7. Eureka Metadata for Instances and Clients](#_eureka_metadata_for_instances_and_clients)
+  * [1.7. Eureka Metadata for Instances and Clients](#_eureka_metadata_for_instances_and_clients)
 
-[1.7.1. Using Eureka on Cloud Foundry](#_using_eureka_on_cloud_foundry)
+    * [1.7.1. Using Eureka on Cloud Foundry](#_using_eureka_on_cloud_foundry)
 
-[1.7.2. Using Eureka on AWS](#_using_eureka_on_aws)
+    * [1.7.2. Using Eureka on AWS](#_using_eureka_on_aws)
 
-[1.7.3. Changing the Eureka Instance ID](#_changing_the_eureka_instance_id)
+    * [1.7.3. Changing the Eureka Instance ID](#_changing_the_eureka_instance_id)
 
-[1.8. Using the EurekaClient](#_using_the_eurekaclient)
+  * [1.8. Using the EurekaClient](#_using_the_eurekaclient)
 
-[1.8.1. EurekaClient without Jersey](#_eurekaclient_without_jersey)
+  * [1.8.1. EurekaClient without Jersey](#_eurekaclient_without_jersey)
 
-[1.9. Alternatives to the Native Netflix EurekaClient](#_alternatives_to_the_native_netflix_eurekaclient)
+  * [1.9. Alternatives to the Native Netflix EurekaClient](#_alternatives_to_the_native_netflix_eurekaclient)
 
-[1.10. Why Is It so Slow to Register a Service?](#_why_is_it_so_slow_to_register_a_service)
+  * [1.10. Why Is It so Slow to Register a Service?](#_why_is_it_so_slow_to_register_a_service)
 
-[1.11. Zones](#_zones)
+  * [1.11. Zones](#_zones)
 
-[1.12. Refreshing Eureka Clients](#_refreshing_eureka_clients)
+  * [1.12. Refreshing Eureka Clients](#_refreshing_eureka_clients)
 
 [2. Service Discovery: Eureka Server](#spring-cloud-eureka-server)
 

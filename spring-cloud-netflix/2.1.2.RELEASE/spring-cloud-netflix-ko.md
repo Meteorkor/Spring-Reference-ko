@@ -237,7 +237,7 @@ eureka:
 
 더 많은 옵션은 여기를 참고하시기 바랍니다. [EurekaInstanceConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.java) and [EurekaClientConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java) 
 
-Eureka Discovery Client을 비활성화 하기위해서는 , `eureka.client.enabled` 설정을 `false`로 설정해야합니다. 그리고 Eureka Discovery Client  비활설화 하기 위해서는 `spring.cloud.discovery.enabled` 를 `false` 로 설정해야 합니다.
+Eureka Discovery Client을 비활성화 하기위해서는, `eureka.client.enabled` 설정을 `false`로 설정하거나 `spring.cloud.discovery.enabled` 를 `false` 로 설정해야 합니다.
 
 //spring.cloud.discovery.enabled 와 ureka.client.enabled 설정 관계는 어떻게 되는가?
 

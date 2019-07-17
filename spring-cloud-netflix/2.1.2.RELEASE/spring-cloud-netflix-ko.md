@@ -229,15 +229,17 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-위에 예에서, "defaultZone" is a magic string fallback value that provides the service URL for any client that does not express a preference (in other words, it is a useful default).
+위에 예에서, 경로의 "defaultZone"는 클라이언트가 서비스 URL을 제공하는데 사용되는 유용한 디폴트 값입니다.
 
-The default application name (that is, the service ID), virtual host, and non-secure port (taken from the `Environment`) are `${spring.application.name}`, `${spring.application.name}` and `${server.port}`, respectively.
+어플리케이션 명(service ID)은 `${spring.application.name}` 으로 설정하며 and 포트 정보는 `${server.port}`으로 설정합니다.
 
-Having `spring-cloud-starter-netflix-eureka-client` on the classpath makes the app into both a Eureka “instance” (that is, it registers itself) and a “client” (it can query the registry to locate other services). The instance behaviour is driven by `eureka.instance.*` configuration keys, but the defaults are fine if you ensure that your application has a value for `spring.application.name` (this is the default for the Eureka service ID or VIP).
+`spring-cloud-starter-netflix-eureka-client` 이 클래스 패스에 있으면, 어플리케이션은 유레카 인스턴스(자신을 등록) 고 클라이언트(다른서비스를 질의) 입니다. 인스턴스 동작은 `eureka.instance.*` 설정에 따라 구동되며, 기본적으로는 `spring.application.name`(Eureka 서비스ID 및 VIP 기본값) 값으로 동작합니다.
 
-See [EurekaInstanceConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.java) and [EurekaClientConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java) for more details on the configurable options.
+더 많은 옵션은 여기를 참고하시기 바랍니다. [EurekaInstanceConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaInstanceConfigBean.java) and [EurekaClientConfigBean](https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/EurekaClientConfigBean.java) 
 
-To disable the Eureka Discovery Client, you can set `eureka.client.enabled` to `false`. Eureka Discovery Client will also be disabled when `spring.cloud.discovery.enabled` is set to `false`.
+Eureka Discovery Client을 비활성화 하기위해서는 , `eureka.client.enabled` 설정을 `false`로 설정해야합니다. 그리고 Eureka Discovery Client  비활설화 하기 위해서는 `spring.cloud.discovery.enabled` 를 `false` 로 설정해야 합니다.
+
+//spring.cloud.discovery.enabled 와 ureka.client.enabled 설정 관계는 어떻게 되는가?
 
 [](#_authenticating_with_the_eureka_server)1.3 Authenticating with the Eureka Server
 ------------------------------------------------------------------------------------

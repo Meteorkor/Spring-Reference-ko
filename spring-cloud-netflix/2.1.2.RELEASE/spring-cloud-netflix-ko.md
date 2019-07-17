@@ -6,9 +6,9 @@
 
 * [1. Service Discovery: Eureka Clients](#_service_discovery_eureka_clients)
 
-  * [1.1. How to Include Eureka Client](#netflix-eureka-client-starter)
+  * [1.1. Eureka Client 의존성 추가](#netflix-eureka-client-starter)
 
-  * [1.2. Registering with Eureka](#_registering_with_eureka)
+  * [1.2. Eureka 등록](#_registering_with_eureka)
 
   * [1.3. Authenticating with the Eureka Server](#_authenticating_with_the_eureka_server)
 
@@ -188,17 +188,17 @@ This project provides Netflix OSS integrations for Spring Boot apps through auto
 
 Service Discovery is one of the key tenets of a microservice-based architecture. Trying to hand-configure each client or some form of convention can be difficult to do and can be brittle. Eureka is the Netflix Service Discovery Server and Client. The server can be configured and deployed to be highly available, with each server replicating state about the registered services to the others.
 
-[](#netflix-eureka-client-starter)1.1 How to Include Eureka Client
+[](#netflix-eureka-client-starter)1.1 Eureka Client 의존성 추가
 ------------------------------------------------------------------
 
-To include the Eureka Client in your project, use the starter with a group ID of `org.springframework.cloud` and an artifact ID of `spring-cloud-starter-netflix-eureka-client`. See the [Spring Cloud Project page](https://projects.spring.io/spring-cloud/) for details on setting up your build system with the current Spring Cloud Release Train.
+Eureka Client를 프로젝트에 추가하기 위해서는, starter 를 사용하면 되는데group ID 는`org.springframework.cloud` and artifact ID 는 `spring-cloud-starter-netflix-eureka-client` 를 사용하면 됩니다.. [Spring Cloud Project page](https://projects.spring.io/spring-cloud/) 에서 자세한 빌드 버전별 자세한 정보를  확인하실수 있습니다.
 
-[](#_registering_with_eureka)1.2 Registering with Eureka
+[](#_registering_with_eureka)1.2 Eureka 등록
 --------------------------------------------------------
 
-When a client registers with Eureka, it provides meta-data about itself — such as host, port, health indicator URL, home page, and other details. Eureka receives heartbeat messages from each instance belonging to a service. If the heartbeat fails over a configurable timetable, the instance is normally removed from the registry.
+Eureka 등록시에, 메타정보(host, port, health indicator URL, home page, 기타등등)를 제공합니다. 유레카는 heartbeat 메시지를 서비스에 속한 각 인스턴스로 부터 받습니다. heartbeat가 실패하게되면, 인스턴스는 레지스트리에서 제거됩니다.
 
-The following example shows a minimal Eureka client application:
+다음은 최소한의 Eureka client application 예제입니다.:
 
 ``` {.programlisting}
 @SpringBootApplication
@@ -217,7 +217,8 @@ public class Application {
 }
 ```
 
-Note that the preceding example shows a normal [Spring Boot](https://projects.spring.io/spring-boot/) application. By having `spring-cloud-starter-netflix-eureka-client` on the classpath, your application automatically registers with the Eureka Server. Configuration is required to locate the Eureka server, as shown in the following example:
+앞의 예는  [Spring Boot](https://projects.spring.io/spring-boot/) 어플리케이션의 예 입니다. `spring-cloud-starter-netflix-eureka-client` 을 클래스패스에 가지고 있으면, 어플리케이션은 자동으로 Eureka Server에 등록하며 Eureka server에 대한 설정이 필요합니다. 
+하단은 Eureka server에 대한 설정의 예입니다
 
 **application.yml. **
 
@@ -228,7 +229,7 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 ```
 
-In the preceding example, "defaultZone" is a magic string fallback value that provides the service URL for any client that does not express a preference (in other words, it is a useful default).
+위에 예에서, "defaultZone" is a magic string fallback value that provides the service URL for any client that does not express a preference (in other words, it is a useful default).
 
 The default application name (that is, the service ID), virtual host, and non-secure port (taken from the `Environment`) are `${spring.application.name}`, `${spring.application.name}` and `${server.port}`, respectively.
 

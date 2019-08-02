@@ -1,26 +1,21 @@
+
 * * * * *
 
 **Table of Contents**
 
 [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#d0e9)
 
-[1. Quick
-Start](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_quick_start)
+[1. Quick Start](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_quick_start)
 
-[1.1. Client Side
-Usage](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_client_side_usage)
+[1.1. Client Side Usage](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_client_side_usage)
 
-[2. Spring Cloud Config
-Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_spring_cloud_config_server)
+[2. Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_spring_cloud_config_server)
 
-[2.1. Environment
-Repository](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_environment_repository)
+[2.1. Environment Repository](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_environment_repository)
 
-[2.1.1. Git
-Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_git_backend)
+[2.1.1. Git Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_git_backend)
 
-[Skipping SSL Certificate
-Validation](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_skipping_ssl_certificate_validation)
+[Skipping SSL Certificate Validation](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_skipping_ssl_certificate_validation)
 
 [Setting HTTP Connection
 Timeout](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_setting_http_connection_timeout)
@@ -66,92 +61,63 @@ Sources](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.R
 [2.1.5. Accessing Backends Through a
 Proxy](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_accessing_backends_through_a_proxy)
 
-[2.1.6. Sharing Configuration With All
-Applications](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_sharing_configuration_with_all_applications)
+[2.1.6. Sharing Configuration With All Applications](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_sharing_configuration_with_all_applications)
 
-[File Based
-Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#spring-cloud-config-server-file-based-repositories)
+[File Based Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#spring-cloud-config-server-file-based-repositories)
 
-[Vault
-Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#spring-cloud-config-server-vault-server)
+[Vault Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#spring-cloud-config-server-vault-server)
 
-[2.1.7. JDBC
-Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_jdbc_backend)
+[2.1.7. JDBC Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_jdbc_backend)
 
-[2.1.8. CredHub
-Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_credhub_backend)
+[2.1.8. CredHub Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_credhub_backend)
 
-[OAuth
-2.0](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_oauth_2_0)
+[OAuth 2.0](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_oauth_2_0)
 
-[2.1.9. Composite Environment
-Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories)
+[2.1.9. Composite Environment Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories)
 
-[Custom Composite Environment
-Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_custom_composite_environment_repositories)
+[Custom Composite Environment Repositories](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_custom_composite_environment_repositories)
 
-[2.1.10. Property
-Overrides](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_property_overrides)
+[2.1.10. Property Overrides](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_property_overrides)
 
-[2.2. Health
-Indicator](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator)
+[2.2. Health Indicator](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator)
 
-[2.3.
-Security](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security)
+[2.3. Security](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security)
 
-[2.4. Encryption and
-Decryption](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_encryption_and_decryption)
+[2.4. Encryption and Decryption](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_encryption_and_decryption)
 
-[2.5. Key
-Management](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_key_management)
+[2.5. Key Management](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_key_management)
 
-[2.6. Creating a Key Store for
-Testing](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_creating_a_key_store_for_testing)
+[2.6. Creating a Key Store for Testing](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_creating_a_key_store_for_testing)
 
-[2.7. Using Multiple Keys and Key
-Rotation](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_using_multiple_keys_and_key_rotation)
+[2.7. Using Multiple Keys and Key Rotation](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_using_multiple_keys_and_key_rotation)
 
-[2.8. Serving Encrypted
-Properties](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_encrypted_properties)
+[2.8. Serving Encrypted Properties](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_encrypted_properties)
 
-[3. Serving Alternative
-Formats](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_alternative_formats)
+[3. Serving Alternative Formats](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_alternative_formats)
 
-[4. Serving Plain
-Text](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_plain_text)
+[4. Serving Plain Text](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_plain_text)
 
-[5. Embedding the Config
-Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_embedding_the_config_server)
+[5. Embedding the Config Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_embedding_the_config_server)
 
-[6. Push Notifications and Spring Cloud
-Bus](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus)
+[6. Push Notifications and Spring Cloud Bus](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_push_notifications_and_spring_cloud_bus)
 
-[7. Spring Cloud Config
-Client](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_spring_cloud_config_client)
+[7. Spring Cloud Config Client](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_spring_cloud_config_client)
 
-[7.1. Config First
-Bootstrap](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-first-bootstrap)
+[7.1. Config First Bootstrap](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-first-bootstrap)
 
-[7.2. Discovery First
-Bootstrap](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#discovery-first-bootstrap)
+[7.2. Discovery First Bootstrap](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#discovery-first-bootstrap)
 
-[7.3. Config Client Fail
-Fast](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-fail-fast)
+[7.3. Config Client Fail Fast](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-fail-fast)
 
-[7.4. Config Client
-Retry](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-retry)
+[7.4. Config Client Retry](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-retry)
 
-[7.5. Locating Remote Configuration
-Resources](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_locating_remote_configuration_resources)
+[7.5. Locating Remote Configuration Resources](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_locating_remote_configuration_resources)
 
-[7.6. Specifying Multiple Urls for the Config
-Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_specifying_multiple_urls_for_the_config_server)
+[7.6. Specifying Multiple Urls for the Config Server](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_specifying_multiple_urls_for_the_config_server)
 
-[7.7. Configuring
-Timeouts](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_configuring_timeouts)
+[7.7. Configuring Timeouts](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_configuring_timeouts)
 
-[7.8.
-Security](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security_2)
+[7.8. Security](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security_2)
 
 [7.8.1. Health
 Indicator](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator_2)
@@ -159,11 +125,9 @@ Indicator](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3
 [7.8.2. Providing A Custom
 RestTemplate](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#custom-rest-template)
 
-[7.8.3.
-Vault](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_vault)
+[7.8.3. Vault](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_vault)
 
-[7.9. Nested Keys In
-Vault](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_nested_keys_in_vault)
+[7.9. Nested Keys In Vault](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_nested_keys_in_vault)
 
 **2.1.3.RELEASE**
 
@@ -184,22 +148,20 @@ being accessible to a wide range of tooling for managing the content. It
 is easy to add alternative implementations and plug them in with Spring
 configuration.
 
-This quick start walks through using both the server and the client of
-Spring Cloud Config Server.
+## Quick Start
+퀵스타트에서는 Spring Cloud Config Server의 서버와 클라이언트를 사용합니다.
 
-First, start the server, as follows:
+먼저, 아래와 같이 서버를 시작합니다.
 
 ``` {.screen}
 $ cd spring-cloud-config-server
 $ ../mvnw spring-boot:run
 ```
 
-The server is a Spring Boot application, so you can run it from your IDE
-if you prefer to do so (the main class is
-`ConfigServerApplication`{.literal}).
+이 서버는 스프링 부트 어플리케이션이며, IDE를 통해서도 실행할 수 있습니다
+(메인 클래스는`ConfigServerApplication` 입니다.)
 
-Next try out a client, as follows:
-
+클라이언트는 아래와 같이 호출합니다.
 ``` {.screen}
 $ curl localhost:8888/foo/development
 {"name":"foo","label":"master","propertySources":[
@@ -207,9 +169,9 @@ $ curl localhost:8888/foo/development
   {"name":"https://github.com/scratches/config-repo/foo.properties","source":{"foo":"bar"}}
 ]}
 ```
-
-The default strategy for locating property sources is to clone a git
-repository (at `spring.cloud.config.server.git.uri`{.literal}) and use
+property 찾는 기본 전략은 git 저장소를 복제하는 것입니다.
+ (at `spring.cloud.config.server.git.uri`) 
+ and use
 it to initialize a mini `SpringApplication`{.literal}. The
 mini-application’s `Environment`{.literal} is used to enumerate property
 sources and publish them at a JSON endpoint.
@@ -247,7 +209,7 @@ spring:
 Other sources are any JDBC compatible database, Subversion, Hashicorp
 Vault, Credhub and local filesystems.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_client_side_usage)1.1 Client Side Usage {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_client_side_usage)1.1 Client Side Usage {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To use these features in an application, you can build it as a Spring
@@ -261,7 +223,7 @@ for Maven users and a Spring IO version management properties file for
 Gradle and Spring CLI users. The following example shows a typical Maven
 configuration:
 
-**pom.xml. **
+**pom.xml. **
 
 ``` {.programlisting}
    <parent>
@@ -386,7 +348,7 @@ The server is embeddable in a Spring Boot application, by using the
 `@EnableConfigServer`{.literal} annotation. Consequently, the following
 application is a config server:
 
-**ConfigServer.java. **
+**ConfigServer.java. **
 
 ``` {.programlisting}
 @SpringBootApplication
@@ -406,7 +368,7 @@ a `configserver.yml`{.literal} in the Config Server jar). Another is to
 use your own `application.properties`{.literal}, as shown in the
 following example:
 
-**application.properties. **
+**application.properties. **
 
 ``` {.programlisting}
 server.port: 8888
@@ -458,7 +420,7 @@ efficient if you keep only text files in it. If you store binary files,
 especially large ones, you may experience delays on the first request
 for configuration or encounter out of memory errors in the server.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_environment_repository)2.1 Environment Repository {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_environment_repository)2.1 Environment Repository {.title style="clear: both"}
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Where should you store the configuration data for the Config Server? The
@@ -489,7 +451,7 @@ one wins (similar to adding entries to a `Map`{.literal}).
 The following sample client application has this bootstrap
 configuration:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 spring:
@@ -517,7 +479,7 @@ You can set spring.cloud.config.server.accept-empty to false so that
 Server would return a HTTP 404 status, if the application is not
 found.By default, this flag is set to true.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_git_backend)2.1.1 Git Backend {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_git_backend)2.1.1 Git Backend {.title}
 
 The default implementation of `EnvironmentRepository`{.literal} uses a
 Git backend, which is very convenient for managing upgrades and physical
@@ -891,7 +853,7 @@ The following table describes the SSH configuration properties.
 
 [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#d0e633)
 
-**Table 2.1. SSH Configuration Properties**
+**Table 2.1. SSH Configuration Properties**
 
   Property Name                  Remarks
   ------------------------------ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1023,7 +985,7 @@ this property is specified in seconds. By default the value is 0,
 meaning the config server will fetch updated configuration from the Git
 repo every time it is requested.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_version_control_backend_filesystem_use)2.1.2 Version Control Backend Filesystem Use {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_version_control_backend_filesystem_use)2.1.2 Version Control Backend Filesystem Use {.title}
 
 ![[Warning]](./Spring%20Cloud%20Config_files/warning.png)
 
@@ -1042,7 +1004,7 @@ Config Server uses by setting
 `spring.cloud.config.server.svn.basedir`{.literal} to a directory that
 does not reside in the system temp structure.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_file_system_backend)2.1.3 File System Backend {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_file_system_backend)2.1.3 File System Backend {.title}
 
 There is also a “native” profile in the Config Server that does not use
 Git but loads the config files from the local classpath or file system
@@ -1099,7 +1061,7 @@ search location ending with `/{label}/`{.literal}. For example,
 be disabled by setting
 `spring.cloud.config.server.native.addLabelLocations=false`{.literal}.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#vault-backend)2.1.4 Vault Backend {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#vault-backend)2.1.4 Vault Backend {.title}
 
 Spring Cloud Config Server also supports
 [Vault](https://www.vaultproject.io/) as a backend.
@@ -1229,14 +1191,14 @@ has the `dev`{.literal} profile enabled, properties written to all of
 the above paths would be available to it, with properties in the first
 path in the list taking priority over the others.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_accessing_backends_through_a_proxy)2.1.5 Accessing Backends Through a Proxy {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_accessing_backends_through_a_proxy)2.1.5 Accessing Backends Through a Proxy {.title}
 
 The configuration server can access a Git or Vault backend through an
 HTTP or HTTPS proxy. This behavior is controlled for either Git or Vault
 by settings under `proxy.http`{.literal} and `proxy.https`{.literal}.
 These settings are per repository, so if you are using a [composite
 environment
-repository](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories "2.1.9 Composite Environment Repositories")
+repository](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories "2.1.9 Composite Environment Repositories")
 you must configure proxy settings for each backend in the composite
 individually. If using a network which requires separate proxy servers
 for HTTP and HTTPS URLs, you can configure both the HTTP and the HTTPS
@@ -1248,7 +1210,7 @@ both HTTP and HTTPS proxies. All of these properties must be prefixed by
 
 [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#d0e1138)
 
-**Table 2.2. Proxy Configuration Properties**
+**Table 2.2. Proxy Configuration Properties**
 
   Property Name       Remarks
   ------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1281,7 +1243,7 @@ spring:
               nonProxyHosts: example.com
 ```
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_sharing_configuration_with_all_applications)2.1.6 Sharing Configuration With All Applications {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_sharing_configuration_with_all_applications)2.1.6 Sharing Configuration With All Applications {.title}
 
 Sharing configuration between all applications varies according to which
 approach you take, as described in the following topics:
@@ -1326,7 +1288,7 @@ using the config server will have the properties `foo`{.literal} and
 $ vault write secret/application foo=bar baz=bam
 ```
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_jdbc_backend)2.1.7 JDBC Backend {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_jdbc_backend)2.1.7 JDBC Backend {.title}
 
 Spring Cloud Config Server supports JDBC (relational database) as a
 backend for configuration properties. You can enable this feature by
@@ -1348,7 +1310,7 @@ Spring Boot properties files named
 encryption and decryption, which will be applied as post-processing
 steps (that is, not in the repository implementation directly).
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_credhub_backend)2.1.8 CredHub Backend {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_credhub_backend)2.1.8 CredHub Backend {.title}
 
 Spring Cloud Config Server supports
 [CredHub](https://docs.cloudfoundry.org/credhub) as a backend for
@@ -1356,7 +1318,7 @@ configuration properties. You can enable this feature by adding a
 dependency to [Spring
 CredHub](https://spring.io/projects/spring-credhub).
 
-**pom.xml. **
+**pom.xml. **
 
 ``` {.programlisting}
 <dependencies>
@@ -1419,7 +1381,7 @@ You can authenticate with [OAuth 2.0](https://oauth.net/2/) using
 [UAA](https://docs.cloudfoundry.org/concepts/architecture/uaa.html) as a
 provider.
 
-**pom.xml. **
+**pom.xml. **
 
 ``` {.programlisting}
 <dependencies>
@@ -1467,7 +1429,7 @@ Note
 
 The used UAA client-id should have `credhub.read`{.literal} as scope.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories)2.1.9 Composite Environment Repositories {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories)2.1.9 Composite Environment Repositories {.title}
 
 In some scenarios, you may wish to pull configuration data from multiple
 environment repositories. To do so, you can enable the
@@ -1542,7 +1504,7 @@ Note
 If your composite environment includes a Vault server as in the previous
 example, you must include a Vault token in every request made to the
 configuration server. See [Vault
-Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#vault-backend "2.1.4 Vault Backend").
+Backend](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#vault-backend "2.1.4 Vault Backend").
 
 ![[Note]](./Spring%20Cloud%20Config_files/note.png)
 
@@ -1574,7 +1536,7 @@ should also implement the `Ordered`{.literal} interface and override the
 `Ordered`{.literal} interface, your `EnvironmentRepository`{.literal} is
 given the lowest priority.
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_property_overrides)2.1.10 Property Overrides {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_property_overrides)2.1.10 Property Overrides {.title}
 
 The Config Server has an “overrides” feature that lets the operator
 provide configuration properties to all applications. The overridden
@@ -1628,7 +1590,7 @@ environment variables or System properties, by setting the
 `spring.cloud.config.overrideNone=true`{.literal} flag (the default is
 false) in the remote repository.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator)2.2 Health Indicator {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator)2.2 Health Indicator {.title style="clear: both"}
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Config Server comes with a Health Indicator that checks whether the
@@ -1658,7 +1620,7 @@ spring:
 You can disable the Health Indicator by setting
 `spring.cloud.config.server.health.enabled=false`{.literal}.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security)2.3 Security {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security)2.3 Security {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 You can secure your Config Server in any way that makes sense to you
@@ -1673,7 +1635,7 @@ not useful in practice, so we recommend you configure the password (by
 setting `spring.security.user.password`{.literal}) and encrypt it (see
 below for instructions on how to do that).
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_encryption_and_decryption)2.4 Encryption and Decryption {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_encryption_and_decryption)2.4 Encryption and Decryption {.title style="clear: both"}
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![[Important]](./Spring%20Cloud%20Config_files/important.png)
@@ -1701,7 +1663,7 @@ If you set up a remote config repository for config client applications,
 it might contain an `application.yml`{.literal} similar to the
 following:
 
-**application.yml. **
+**application.yml. **
 
 ``` {.programlisting}
 spring:
@@ -1714,7 +1676,7 @@ Encrypted values in a .properties file must not be wrapped in quotes.
 Otherwise, the value is not decrypted. The following example shows
 values that would work:
 
-**application.properties. **
+**application.properties. **
 
 ``` {.screen}
 spring.datasource.username: dbuser
@@ -1815,7 +1777,7 @@ Note
 The `--key`{.literal} argument is mandatory (despite having a
 `--`{.literal} prefix).
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_key_management)2.5 Key Management {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_key_management)2.5 Key Management {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
 The Config Server can use a symmetric (shared) key or an asymmetric one
@@ -1856,7 +1818,7 @@ in the server. On the other hand, it can be a useful option if your
 config server is relatively insecure and only a handful of clients need
 the encrypted properties.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_creating_a_key_store_for_testing)2.6 Creating a Key Store for Testing {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_creating_a_key_store_for_testing)2.6 Creating a Key Store for Testing {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To create a keystore for testing, you can use a command resembling the
@@ -1881,7 +1843,7 @@ encrypt:
     secret: changeme
 ```
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_using_multiple_keys_and_key_rotation)2.7 Using Multiple Keys and Key Rotation {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_using_multiple_keys_and_key_rotation)2.7 Using Multiple Keys and Key Rotation {.title style="clear: both"}
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In addition to the `{cipher}`{.literal} prefix in encrypted property
@@ -1925,7 +1887,7 @@ If you want to let the Config Server handle all encryption as well as
 decryption, the `{name:value}`{.literal} prefixes can also be added as
 plain text posted to the `/encrypt`{.literal} endpoint, .
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_encrypted_properties)2.8 Serving Encrypted Properties {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_serving_encrypted_properties)2.8 Serving Encrypted Properties {.title style="clear: both"}
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Sometimes you want the clients to decrypt the configuration locally,
@@ -2067,7 +2029,7 @@ application, it makes sense to initialize the same way as any other
 application. When setting
 `spring.cloud.config.server.bootstrap`{.literal} to `true`{.literal} you
 must also use a [composite environment repository
-configuration](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories "2.1.9 Composite Environment Repositories").
+configuration](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#composite-environment-repositories "2.1.9 Composite Environment Repositories").
 For example
 
 ``` {.programlisting}
@@ -2160,7 +2122,7 @@ Config Server (or other external property sources provided by the
 application developer). It also picks up some additional useful features
 related to `Environment`{.literal} change events.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-first-bootstrap)7.1 Config First Bootstrap {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-first-bootstrap)7.1 Config First Bootstrap {.title style="clear: both"}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The default behavior for any application that has the Spring Cloud
@@ -2176,7 +2138,7 @@ an environment variable) with the server address set in
 `spring.cloud.config.uri`{.literal} (it defaults to
 "http://localhost:8888").
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#discovery-first-bootstrap)7.2 Discovery First Bootstrap {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#discovery-first-bootstrap)7.2 Discovery First Bootstrap {.title style="clear: both"}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 If you use a `DiscoveryClient`{.literal} implementation, such as Spring
@@ -2212,7 +2174,7 @@ can configure the credentials as `user`{.literal} and
 can set `configPath`{.literal}. For example, the following YAML file is
 for a Config Server that is a Eureka client:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 eureka:
@@ -2224,7 +2186,7 @@ eureka:
       configPath: /config
 ```
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-fail-fast)7.3 Config Client Fail Fast {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-fail-fast)7.3 Config Client Fail Fast {.title style="clear: both"}
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In some cases, you may want to fail startup of a service if it cannot
@@ -2233,7 +2195,7 @@ bootstrap configuration property
 `spring.cloud.config.fail-fast=true`{.literal} to make the client halt
 with an Exception.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-retry)7.4 Config Client Retry {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#config-client-retry)7.4 Config Client Retry {.title style="clear: both"}
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 If you expect that the config server may occasionally be unavailable
@@ -2256,7 +2218,7 @@ type `RetryOperationsInterceptor`{.literal} with an ID of
 `configServerRetryInterceptor`{.literal}. Spring Retry has a
 `RetryInterceptorBuilder`{.literal} that supports creating one.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_locating_remote_configuration_resources)7.5 Locating Remote Configuration Resources {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_locating_remote_configuration_resources)7.5 Locating Remote Configuration Resources {.title style="clear: both"}
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The Config Service serves property sources from
@@ -2288,7 +2250,7 @@ feature branch. For instance, you might want to align the config label
 with your branch but make it optional (in that case, use
 `spring.cloud.config.label=myfeature,develop`{.literal}).
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_specifying_multiple_urls_for_the_config_server)7.6 Specifying Multiple Urls for the Config Server {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_specifying_multiple_urls_for_the_config_server)7.6 Specifying Multiple Urls for the Config Server {.title style="clear: both"}
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 To ensure high availability when you have multiple instances of Config
@@ -2312,7 +2274,7 @@ the credentials in each URL you specify under the
 of security mechanism, you cannot (currently) support per-Config Server
 authentication and authorization.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_configuring_timeouts)7.7 Configuring Timeouts {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_configuring_timeouts)7.7 Configuring Timeouts {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 If you want to configure timeout thresholds:
@@ -2322,7 +2284,7 @@ If you want to configure timeout thresholds:
 -   Connection timeouts can be configured by using the property
     `spring.cloud.config.request-connect-timeout`{.literal}.
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security_2)7.8 Security {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_security_2)7.8 Security {.title style="clear: both"}
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 If you use HTTP Basic security on the server, clients need to know the
@@ -2330,7 +2292,7 @@ password (and username if it is not the default). You can specify the
 username and password through the config server URI or via separate
 username and password properties, as shown in the following example:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 spring:
@@ -2342,7 +2304,7 @@ spring:
 The following example shows an alternate way to pass the same
 information:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 spring:
@@ -2363,7 +2325,7 @@ does not need to be in a config file). The following example works
 locally and for a user-provided service on Cloud Foundry named
 `configserver`{.literal}:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 spring:
@@ -2373,11 +2335,11 @@ spring:
 ```
 
 If you use another form of security, you might need to [provide a
-`RestTemplate`{.literal}](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#custom-rest-template "7.8.2 Providing A Custom RestTemplate")
+`RestTemplate`{.literal}](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#custom-rest-template "7.8.2 Providing A Custom RestTemplate")
 to the `ConfigServicePropertySourceLocator`{.literal} (for example, by
 grabbing it in the bootstrap context and injecting it).
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator_2)7.8.1 Health Indicator {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_health_indicator_2)7.8.1 Health Indicator {.title}
 
 The Config Client supplies a Spring Boot Health Indicator that attempts
 to load configuration from the Config Server. The health indicator can
@@ -2386,7 +2348,7 @@ response is also cached for performance reasons. The default cache time
 to live is 5 minutes. To change that value, set the
 `health.config.time-to-live`{.literal} property (in milliseconds).
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#custom-rest-template)7.8.2 Providing A Custom RestTemplate {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#custom-rest-template)7.8.2 Providing A Custom RestTemplate {.title}
 
 In some cases, you might need to customize the requests made to the
 config server from the client. Typically, doing so involves passing
@@ -2397,7 +2359,7 @@ the server. To provide a custom `RestTemplate`{.literal}:
     `PropertySourceLocator`{.literal}, as shown in the following
     example:
 
-**CustomConfigServiceBootstrapConfiguration.java. **
+**CustomConfigServiceBootstrapConfiguration.java. **
 
 ``` {.programlisting}
 @Configuration
@@ -2416,13 +2378,13 @@ public class CustomConfigServiceBootstrapConfiguration {
     `spring.factories`{.literal} and specify your custom configuration,
     as shown in the following example:
 
-**spring.factories. **
+**spring.factories. **
 
 ``` {.programlisting}
 org.springframework.cloud.bootstrap.BootstrapConfiguration = com.my.config.client.CustomConfigServiceBootstrapConfiguration
 ```
 
-### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_vault)7.8.3 Vault {.title}
+### [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_vault)7.8.3 Vault {.title}
 
 When using Vault as a backend to your config server, the client needs to
 supply a token for the server to retrieve values from Vault. This token
@@ -2430,7 +2392,7 @@ can be provided within the client by setting
 `spring.cloud.config.token`{.literal} in `bootstrap.yml`{.literal}, as
 shown in the following example:
 
-**bootstrap.yml. **
+**bootstrap.yml. **
 
 ``` {.programlisting}
 spring:
@@ -2439,7 +2401,7 @@ spring:
       token: YourVaultToken
 ```
 
-[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_nested_keys_in_vault)7.9 Nested Keys In Vault {.title style="clear: both"}
+[](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_nested_keys_in_vault)7.9 Nested Keys In Vault {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vault supports the ability to nest keys in a value stored in Vault, as

@@ -170,13 +170,10 @@ $ curl localhost:8888/foo/development
 ]}
 ```
 property 찾는 기본 전략은 git 저장소를 복제하는 것입니다.
- (at `spring.cloud.config.server.git.uri`) 
- and use
-it to initialize a mini `SpringApplication`{.literal}. The
-mini-application’s `Environment`{.literal} is used to enumerate property
-sources and publish them at a JSON endpoint.
+  (spring.cloud.config.server.git.uri 을 설정으로 사용합니다.)
 
-The HTTP service has resources in the following form:
+아래와 같은 형태로 http 호출하면 설정을 json 형태로 응답됩니다.
+
 
 ``` {.screen}
 /{application}/{profile}[/{label}]
@@ -186,17 +183,13 @@ The HTTP service has resources in the following form:
 /{label}/{application}-{profile}.properties
 ```
 
-where `application`{.literal} is injected as the
-`spring.config.name`{.literal} in the `SpringApplication`{.literal}
-(what is normally `application`{.literal} in a regular Spring Boot app),
-`profile`{.literal} is an active profile (or comma-separated list of
-properties), and `label`{.literal} is an optional git label (defaults to
-`master`{.literal}.)
+어플리케이션명은 'spring.config.name' 으로 설정되며
+profile은 application에 active된 profile을 사용합니다.
+마지막으로 lebel은 필수가 아닌 옵션이며 git에 label을 선택하는데 사용되며 기본값은 master 입니다.
 
-Spring Cloud Config Server pulls configuration for remote clients from
-various sources. The following example gets configuration from a git
-repository (which must be provided), as shown in the following example:
-
+스프링 클라우드 컨피그 서버는 설정정보들이 필요한 클라이언트들을 위해 설정정보들을 가져오게 되는데
+여기서는 git으로 부터 가져오는 방법의 예입니다.
+ 
 ``` {.programlisting}
 spring:
   cloud:
@@ -206,22 +199,16 @@ spring:
           uri: https://github.com/spring-cloud-samples/config-repo
 ```
 
-Other sources are any JDBC compatible database, Subversion, Hashicorp
-Vault, Credhub and local filesystems.
+git 뿐 아니라 , JDBC, Subversion, Hashicorp Vault, CredHub 그리고 파일등을 통해서 설정을 읽어올수 있습니다.
+
 
 [](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/spring-cloud-config.html#_client_side_usage)1.1 Client Side Usage {.title style="clear: both"}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-To use these features in an application, you can build it as a Spring
-Boot application that depends on spring-cloud-config-client (for an
-example, see the test cases for the config-client or the sample
-application). The most convenient way to add the dependency is with a
-Spring Boot starter
-`org.springframework.cloud:spring-cloud-starter-config`{.literal}. There
-is also a parent pom and BOM (`spring-cloud-starter-parent`{.literal})
-for Maven users and a Spring IO version management properties file for
-Gradle and Spring CLI users. The following example shows a typical Maven
-configuration:
+어플리케이션에서 이러한 기능들을 사용하기 위해서는, Spring Boot에 'spring-cloud-config-client' 의존도를 설정해야 합니다.
+
+
+더 간단하게는, Spring Boot starter에서 `org.springframework.cloud:spring-cloud-starter-config` 를 설정하시면 됩니다.
 
 **pom.xml. **
 
@@ -269,8 +256,8 @@ configuration:
    <!-- repositories also needed for snapshots and milestones -->
 ```
 
-Now you can create a standard Spring Boot application, such as the
-following HTTP server:
+
+아래와 같이 Http Server 를 만들수 있습니다:
 
 ``` {.screen}
 @SpringBootApplication
@@ -289,26 +276,20 @@ public class Application {
 }
 ```
 
-When this HTTP server runs, it picks up the external configuration from
-the default local config server (if it is running) on port 8888. To
-modify the startup behavior, you can change the location of the config
-server by using `bootstrap.properties`{.literal} (similar to
-`application.properties`{.literal} but for the bootstrap phase of an
-application context), as shown in the following example:
+HTTP 서버를 실행할때, 외부에서 설정을 얻어오기 위해서는 'bootstrap.properties' 파일을 설정해야 합니다.
 
 ``` {.screen}
 spring.cloud.config.uri: http://myconfigserver.com
 ```
 
-By default, if no application name is set, `application`{.literal} will
-be used. To modify the name, the following property can be added to the
-`bootstrap.properties`{.literal} file:
+기본적으로, 어플리케이션 명이 설정되어있지 않다면, `application`으로 사용됩니다.
+어플리케이션명을 수정하기 위해서는 `bootstrap.properties`에 아래와같이 수정합니다.
 
 ``` {.screen}
 spring.application.name: myapp
 ```
 
-![[Note]](./Spring%20Cloud%20Config_files/note.png)
+![[Note]](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.3.RELEASE/single/images/note.png)
 
 Note
 
